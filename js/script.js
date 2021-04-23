@@ -33,44 +33,36 @@ document.addEventListener('DOMContentLoaded', (event) => {
       }  
    });
    // ---tabsFAQ
+
    //swipper
-   let swiperConfig = {
-      lazy: true,
 
-      //стрілки
-      navigation:{
-         nextEl: '.controls__right',
-         prevEl: '.controls__left'
-      },
-      // pagination:{
-      //    el: '.swiper-pagination',
-      //    // clickable: true,
-      //    // dynamicBullets: true,
-      //    type: 'progressbar',
-         
-      // },
-      slidesPerView: 'auto',
-      spaceBetween: 15,
-      simulateTouch: true,
-      // grabCursor: true,
-      autoHeight: true,
-      freeMode: true,
-
-      //автопрокрутка
-      // autoplay:{
-      //    delay: 2000,
-      //    stopOnLastSlide: true,
-      //    disableOnInteraction: true,
-      // },
-      speed: 800,
-   };
-   const swipers = document.querySelectorAll('.category__gallery');
-   let swiperSliders = [];
-
-   swipers.forEach((item) => {
-      swiperSliders.push( new Swiper(item, swiperConfig));
-   });
-
+   function swiperConfig (controlsLeft, controlsRight){
+      return {
+         lazy: true,
+   
+         //стрілки
+         navigation:{
+            nextEl: controlsRight,
+            prevEl: controlsLeft
+         },
+        
+         slidesPerView: 'auto',
+         spaceBetween: 15,
+         simulateTouch: true,
+         // grabCursor: true,
+         autoHeight: true,
+         freeMode: true,
+   
+         //автопрокрутка
+         // autoplay:{
+         //    delay: 2000,
+         //    stopOnLastSlide: true,
+         //    disableOnInteraction: true,
+         // },
+         speed: 800,
+      };
+   }
+   
    //gallery
    const lightbox = GLightbox({
       touchNavigation: true,
@@ -79,24 +71,41 @@ document.addEventListener('DOMContentLoaded', (event) => {
       zoomable: true,
   });
 
+   const categories = document.querySelectorAll('.assortment__category');
+   
    const galleryBtns = document.querySelectorAll('.category__btn'),
-         categDescBlocks = document.querySelectorAll('.category__desc'), 
-         galleryWrappers = document.querySelectorAll('.category__gallery .swiper-wrapper');
+         categDescBlocks = document.querySelectorAll('.category__desc'); 
+
+   let swiperSliders = [];
+
+   categories.forEach((item, i) => {
+      
+      let gallery = item.querySelector('.category__gallery');
+
+      let config = swiperConfig(galleryBtns[i].previousElementSibling, galleryBtns[i].nextElementSibling);
+      swiperSliders.push( new Swiper(gallery,config));
+   });
+ 
 
    galleryBtns.forEach((item, i)=>{
       item.addEventListener('click', function(event){
          if (event.target.classList.contains('collapsed')) {
-            galleryWrappers[i].classList.remove('galleryMode');
+            categories[i].querySelector('.swiper-wrapper').classList.remove('galleryMode');
             event.target.classList.remove('collapsed');
             categDescBlocks[i].classList.remove('show');
-            swiperSliders[i] = new Swiper(swipers[i], swiperConfig);
+            swiperSliders[i] = new Swiper(categories[i].querySelector('.category__gallery'), swiperConfig(item.previousElementSibling, item.nextElementSibling));
+            item.nextElementSibling.classList.remove('d-none');
+            item.previousElementSibling.classList.remove('d-none');
             event.target.innerHTML = 'Mostra di più';
          }
          else{
             swiperSliders[i].destroy(true, true);
-            galleryWrappers[i].classList.add('galleryMode');
+            categories[i].querySelector('.swiper-wrapper').classList.add('galleryMode');
             event.target.innerHTML = 'Mostra di meno';
             event.target.classList.add('collapsed');
+            item.nextElementSibling.classList.add('d-none');
+            item.previousElementSibling.classList.add('d-none');
+
             categDescBlocks[i].classList.add('show');
 
          }
