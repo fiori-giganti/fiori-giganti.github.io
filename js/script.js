@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       slidesPerView:    1,
       spaceBetween: 15,
       simulateTouch: true,
-      
+      autoHeight: true,
       speed: 800,
       thumbs: {
          swiper: faqTabsSwiper
