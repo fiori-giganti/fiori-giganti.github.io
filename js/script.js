@@ -138,7 +138,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
       const prevPhoto = item.querySelector('.controls__left'),
             nextPhoto = item.querySelector('.controls__right');
 
-            console.log(gallery);
       let config = swiperConfig(prevPhoto, nextPhoto);
       swiperSliders.push( new Swiper(gallery,config));
       
