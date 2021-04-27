@@ -16,6 +16,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
             document.body.classList.remove('no-scroll');         
             document.querySelector("html").classList.remove('no-scroll');
          }); 
+         document.querySelector("#navToFAQ").addEventListener('click', function(e){
+            menuBody.classList.remove('active');
+            menuBtn.classList.remove('active');
+            document.body.classList.remove('no-scroll');         
+            document.querySelector("html").classList.remove('no-scroll');
+         }); 
       });
       
    }
@@ -29,7 +35,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
       
       breakpoints: {
          // when window width is >= 320px
-         slidesPerView: 'auto',
          watchSlidesVisibility: true,
          watchSlidesProgress: true,
          220: {
@@ -43,7 +48,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
          576: {
          slidesPerView: 4,
          simulateTouch: true,
-
          }
       }
    
@@ -159,7 +163,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
    galleryBtns.forEach((item, i)=>{
       item.addEventListener('click', function(event){
+         
          if (event.target.classList.contains('collapsed')) {
+
             categories[i].querySelector('.swiper-wrapper').classList.remove('galleryMode');
             event.target.classList.remove('collapsed');
             categDescBlocks[i].classList.remove('show');

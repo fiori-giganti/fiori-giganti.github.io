@@ -58,6 +58,7 @@
          <nav class="menu__body navbar-collapse  d-md-flex">
             <ul class="navbar-nav animate__animated animate__fadeInDown">
                <li class="nav-item menu__link active"><a href="/en/" class="nav-link header__menu-link">Home</a></li>
+               <li class="nav-item menu__link" id="navToFAQ"><a href="#FAQ" class="nav-link header__menu-link">FAQ</a></li>
                <li class="nav-item menu__link"><a href="our-story/" class="nav-link header__menu-link">Our story</a></li>
                <li class="nav-item menu__link" id="navToOrder"><a href="#order"
                      class="nav-link header__menu-link">Contacts</a></li>
@@ -78,7 +79,7 @@
       </div>
       <div
          class="header-wrapper__content container d-flex flex-column justify-content-md-between justify-content-start">
-         <h1 class="header-wrapper__title animate__animated animate__fadeIn">Make your event or your home <span>unique</span></h1>
+         <h1 class="header-wrapper__title animate__animated animate__fadeIn">Make your event or home <span>unique</span></h1>
          <p class="header-wrapper__desc">Giant handmade flowers for your cozy home or unforgettable ceremony!</p>
          <a href='#about' class=" header-wrapper__go-btn go-btn animate__animated animate__fadeIn">more</a>
          <div class="header-wrapper__promo-photo position-absolute top-25 start-45 animate__animated animate__fadeIn">
@@ -114,13 +115,16 @@
          <div class="faq-block container ">
             
             <div class="faq-block__tabs-wrapper swiper-container">
-               <ul class="faq-block__tabs swiper-wrapper row align-self-center align-items-center px-0" id="FAQ">
+               <ul class="faq-block__tabs swiper-wrapper align-self-center align-items-center px-0" id="FAQ">
                   
                   <li class="faq-block__item swiper-slide  col-sm-3 col-3">
                      <h3>Materials</h3>
                   </li>
                   <li class="faq-block__item swiper-slide col-sm-3 col-3">
                      <h3>Sizes & Colors</h3>
+                  </li>
+                  <li  id='Prezzi' class="faq-block__item swiper-slide col-sm-2 col-3">
+                     <h3>Prices</h3>
                   </li>
                   <li class="faq-block__item swiper-slide col-sm-3 col-3">
                      <h3>Manufacturing Time</h3>
@@ -146,6 +150,41 @@
                     </p>
                   </div>
                   <div class="faq-block__content-item swiper-slide ">
+                     <p>
+                        The price for each item varies and depends on the difficulty of processing, color and size.
+                     </p>
+                     <ul>
+                        <strong> Approximate prices:</strong>
+                        <li>
+                           Approximate prices:
+                        </li>
+                        <li>
+                           decorative free standing flower on the stem (not lamp) - from 65 € (including the base and leaves)
+                        </li>
+                        <li>
+                           free standing lamp flower - from 100 €
+                        </li>
+                        <li>
+                           table lamp flower - from 50 €
+                        </li>
+                        <li>
+                           flower in the wall picture - from 50 €
+                        </li>
+                        <li>
+                           composition of 3 free standing flowers on stems - from € 180 (including the base and leaves)
+                        </li>
+                        <li>
+                           wall composition - starting from 100 €
+                        </li>
+                        <li>
+                           composition in the round box - from 60 €
+                        </li>
+                     </ul>
+                     <p>
+                        All prices are given without delivery fee, which is paid by the customer.
+                     </p>
+                  </div>
+                  <div class="faq-block__content-item swiper-slide ">
                      <p>The time spent on manufacturing varies depending on the quantity of orders, the availability of colors and materials.</p>
                      <p>
                         The approximate manufacturing time is 20 - 30 days from the moment of prepayment in the amount of 30% of the value of the item.
@@ -153,7 +192,7 @@
                   </div>
                   <div class="faq-block__content-item swiper-slide ">
                      <p>
-                        <strong>SHIPPING:</strong> throughout Italy or around the world. Shipping prices vary according to the size of the package. An example: a wall flower 7-10 €; a lamp or a decorative flower on the stem 20-25 €; floor composition of 3 flowers € 30-35.
+                        <strong>SHIPPING:</strong> throughout Italy or around the world. Shipping prices vary according to the size of the package. An example: a wall flower 7-10 €; a lamp or a decorative flower on the stem 25-35 €; composition of 3 free standing flowers  € 30-35.
                      </p>
                      <p>
                         <strong>RENT:</strong> events, weddings, showcases, fashion shows, photo shoots or other <strong>ONLY IN SARDINIA</strong>.
@@ -169,17 +208,14 @@
          </div>
       </div>
       <div class="assortment">
-         <h2 class="assortment__heading main__heading container">ASSORTMENT</h2>
-         <p class="assortment__subheading container">What can we do for you</p>
-
-         
-         
-         <!-- Floor Flowers -->
+         <h2 class="assortment__heading main__heading container">assortment on offer</h2>
+         <p class="assortment__subheading container"></p>         
+         <!-- Free standing flowers  -->
          <div class="assortment__category ">
-            <h3 class="category__name container">Floor Flowers</h3>
+            <h3 class="category__name container">Free standing flowers </h3>
             <div class="category__desc container">
-               <p>Decorative floor flower on the stem (not lamp) - <strong>from 65€</strong> (including the base and leaves)</p>
-               <p>Composition of 3 floor flowers on stems -<strong> from € 180</strong> (including the base and leaves)</p>
+               <p>Decorative free standing flower on the stem (not lamp) - <strong>from 65€</strong> (including the base and leaves)</p>
+               <p>Composition of 3 free standing flowers  on stems -<strong> from € 180</strong> (including the base and leaves)</p>
             </div>
 
             <!-- Slider main container -->
@@ -190,61 +226,61 @@
                   <div class="swiper-slide">
                      <a href="/img/Fiori_da_terra/IMG_1027__Fiori_da_terra.jpg" class="glightbox">
                         <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1027__Fiori_da_terra.jpg"
-                           alt="Floor Flowers" class="category__photo">
+                           alt="Free standing flowers " class="category__photo">
                      </a>
                   </div>
                   <div class="swiper-slide">
                      <a href="/img/Fiori_da_terra/IMG_1035 1__Fiori_da_terra.jpg" class="glightbox">
                         <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1035 1__Fiori_da_terra.jpg"
-                           alt="Floor Flowers" class="category__photo">
+                           alt="Free standing flowers " class="category__photo">
                      </a>
                   </div>
                   <div class="swiper-slide">
                      <a href="/img/Fiori_da_terra/IMG_1044 1__Fiori_da_terra.jpg" class="glightbox">
                         <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1044 1__Fiori_da_terra.jpg"
-                           alt="Floor Flowers" class="category__photo">
+                           alt="Free standing flowers " class="category__photo">
                      </a>
                   </div>
                   <div class="swiper-slide">
                      <a href="/img/Fiori_da_terra/IMG_1077__Fiori_da_terra.jpg" class="glightbox">
                         <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1077__Fiori_da_terra.jpg"
-                           alt="Floor Flowers" class="category__photo">
+                           alt="Free standing flowers " class="category__photo">
                      </a>
                   </div>
                   <div class="swiper-slide">
                      <a href="/img/Fiori_da_terra/IMG_1102__Fiori_da_terra.jpg" class="glightbox">
                         <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1102__Fiori_da_terra.jpg"
-                           alt="Floor Flowers" class="category__photo">
+                           alt="Free standing flowers " class="category__photo">
                      </a>
                   </div>
                   <div class="swiper-slide">
                      <a href="/img/Fiori_da_terra/IMG_1117 1__Fiori_da_terra.jpg" class="glightbox">
                         <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1117 1__Fiori_da_terra.jpg"
-                           alt="Floor Flowers" class="category__photo">
+                           alt="Free standing flowers " class="category__photo">
                      </a>
                   </div>
                   <div class="swiper-slide">
                      <a href="/img/Fiori_da_terra/IMG_1214 1__Fiori_da_terra.jpg" class="glightbox">
                         <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1214 1__Fiori_da_terra.jpg"
-                           alt="Floor Flowers" class="category__photo">
+                           alt="Free standing flowers " class="category__photo">
                      </a>
                   </div>
                   <div class="swiper-slide">
                      <a href="/img/Fiori_da_terra/IMG_1216__Fiori_da_terra.jpg" class="glightbox">
                         <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1216__Fiori_da_terra.jpg"
-                           alt="Floor Flowers" class="category__photo">
+                           alt="Free standing flowers " class="category__photo">
                      </a>
                   </div>
                   <div class="swiper-slide">
                      <a href="/img/Fiori_da_terra/IMG_1245 1__Fiori_da_terra.jpg" class="glightbox">
                         <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1245 1__Fiori_da_terra.jpg"
-                           alt="Floor Flowers" class="category__photo">
+                           alt="Free standing flowers " class="category__photo">
                      </a>
                   </div>
                   <div class="swiper-slide">
                      <a href="/img/Fiori_da_terra/IMG_1271 1__Fiori_da_terra.jpg" class="glightbox">
                         <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1271 1__Fiori_da_terra.jpg"
-                           alt="Floor Flowers" class="category__photo">
+                           alt="Free standing flowers " class="category__photo">
                      </a>
                   </div>
                </div>
@@ -257,12 +293,12 @@
                <div id="button-next__swiper_1"><button class="controls__right"></button></div>
             </div>
          </div>
-         <!-- /Floor Flowers -->
+         <!-- /Free standing flowers  -->
          <!-- Lamps -->
          <div class="assortment__category ">
             <h3 class="category__name container">Lamps</h3>
             <div class="category__desc container">
-               <p>Floor lamp flower - <strong>from 100€</strong>.</p>
+               <p>Free standing lamp flower - <strong>from 100€</strong>.</p>
                <p>Table lamp flower - <strong>from 50€</strong>.</p>
             </div>
 
@@ -497,7 +533,7 @@
             <h3 class="category__name container">Compositions</h3>
             <div class="category__desc container">
                <p>Wall composition - starting <strong>from 100€</strong>.</p>
-            <p>Composition of 3 floor flowers on stems - <strong>from €180</strong> (including the base and leaves).</p>
+            <p>Composition of 3 free standing flowers  on stems - <strong>from €180</strong> (including the base and leaves).</p>
             </div>
 
             <!-- Slider main container -->
