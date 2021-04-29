@@ -52,9 +52,15 @@
       <div
          class="header__menu menu navbar navbar-expand-md navbar-light header container justify-content-between animate__animated  ">
          <a href="/en/" class="header__logo navbar-brand "><img loading='lazy' src="/img/logo.svg" alt=""></a>
-         <button class="d-md-none menu__toggler-btn">
-            <span></span>
-         </button>
+         <div class="menu__controls d-flex">
+            <a href="/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Leggi in italiano" class="d-none d-md-none lang-toggler-btn nav-link">
+               <span>IT</span>
+            </a>
+            
+            <button class="d-md-none menu__toggler-btn">
+               <span></span>
+            </button>
+         </div>
          <nav class="menu__body navbar-collapse  d-md-flex">
             <ul class="navbar-nav animate__animated animate__fadeInDown">
                <li class="nav-item menu__link active"><a href="/en/" class="nav-link header__menu-link">Home</a></li>
@@ -64,7 +70,7 @@
                      class="nav-link header__menu-link">Contacts</a></li>
                <li class="nav-item menu__link"><a href="/" class="nav-link header__menu-link">IT</a></li>
             </ul>
-            <div class="menu__social-links   social-links  d-md-none d-flex justify-content-center mx-3">
+            <div class="menu__social-links en  social-links  d-md-none d-flex justify-content-center mx-3">
 
                <a href="https://www.instagram.com/irina_exclusive_show/" target="_blank" class="social-links__insta"
                   title="my Instagram"></a>
@@ -120,13 +126,13 @@
                   <li class="faq-block__item swiper-slide  col-sm-3 col-3">
                      <h3>Materials</h3>
                   </li>
-                  <li class="faq-block__item swiper-slide col-sm-3 col-3">
+                  <li class="faq-block__item swiper-slide col-sm-2 col-3">
                      <h3>Sizes & Colors</h3>
                   </li>
                   <li  id='Prezzi' class="faq-block__item swiper-slide col-sm-2 col-3">
                      <h3>Prices</h3>
                   </li>
-                  <li class="faq-block__item swiper-slide col-sm-3 col-3">
+                  <li class="faq-block__item swiper-slide col-sm-3 col-4">
                      <h3>Manufacturing Time</h3>
                   </li>
                   <li class="faq-block__item swiper-slide col-sm-3 col-3">
@@ -219,70 +225,104 @@
             </div>
 
             <!-- Slider main container -->
-            <div class="category__gallery swiper_1 swiper-container container">
+            <div class="category__gallery swiper_1  container">
                <!-- Additional required wrapper -->
                <div class="swiper-wrapper">
                   <!-- Slides -->
                   <div class="swiper-slide">
-                     <a href="/img/Fiori_da_terra/IMG_1027__Fiori_da_terra.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1027__Fiori_da_terra.jpg"
-                           alt="Free standing flowers " class="category__photo">
-                     </a>
-                  </div>
-                  <div class="swiper-slide">
-                     <a href="/img/Fiori_da_terra/IMG_1035 1__Fiori_da_terra.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1035 1__Fiori_da_terra.jpg"
-                           alt="Free standing flowers " class="category__photo">
-                     </a>
-                  </div>
-                  <div class="swiper-slide">
-                     <a href="/img/Fiori_da_terra/IMG_1044 1__Fiori_da_terra.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1044 1__Fiori_da_terra.jpg"
-                           alt="Free standing flowers " class="category__photo">
-                     </a>
-                  </div>
-                  <div class="swiper-slide">
-                     <a href="/img/Fiori_da_terra/IMG_1077__Fiori_da_terra.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1077__Fiori_da_terra.jpg"
-                           alt="Free standing flowers " class="category__photo">
-                     </a>
-                  </div>
-                  <div class="swiper-slide">
-                     <a href="/img/Fiori_da_terra/IMG_1102__Fiori_da_terra.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1102__Fiori_da_terra.jpg"
-                           alt="Free standing flowers " class="category__photo">
+                     <a href="/img/Fiori_da_terra/IMG_1644.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1644.jpg"
+                           alt="Fiori da terra" class="category__photo">
                      </a>
                   </div>
                   <div class="swiper-slide">
                      <a href="/img/Fiori_da_terra/IMG_1117 1__Fiori_da_terra.jpg" class="glightbox">
                         <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1117 1__Fiori_da_terra.jpg"
-                           alt="Free standing flowers " class="category__photo">
+                           alt="Fiori da terra" class="category__photo">
                      </a>
                   </div>
+                   <div class="swiper-slide">
+                     <a href="/img/Fiori_da_terra/IMG_1271 1__Fiori_da_terra.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1271 1__Fiori_da_terra.jpg"
+                           alt="Fiori da terra" class="category__photo">
+                     </a>
+                  </div>  
                   <div class="swiper-slide">
                      <a href="/img/Fiori_da_terra/IMG_1214 1__Fiori_da_terra.jpg" class="glightbox">
                         <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1214 1__Fiori_da_terra.jpg"
-                           alt="Free standing flowers " class="category__photo">
+                           alt="Fiori da terra" class="category__photo">
                      </a>
                   </div>
                   <div class="swiper-slide">
+                     <a href="/img/Fiori_da_terra/IMG_1044 1__Fiori_da_terra.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1044 1__Fiori_da_terra.jpg"
+                           alt="Fiori da terra" class="category__photo">
+                     </a>
+                  </div>
+                  <div class="swiper-slide">
+                     <a href="/img/Fiori_da_terra/IMG_1027__Fiori_da_terra.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1027__Fiori_da_terra.jpg"
+                           alt="Fiori da terra" class="category__photo">
+                     </a>
+                  </div>
+                  <div class="swiper-slide">
+                     <a href="/img/Fiori_da_terra/IMG_1035 1__Fiori_da_terra.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1035 1__Fiori_da_terra.jpg"
+                           alt="Fiori da terra" class="category__photo">
+                     </a>
+                  </div>
+                  
+                  <div class="swiper-slide">
+                     <a href="/img/Fiori_da_terra/IMG_1077__Fiori_da_terra.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1077__Fiori_da_terra.jpg"
+                           alt="Fiori da terra" class="category__photo">
+                     </a>
+                  </div>
+                  <div class="swiper-slide">
+                     <a href="/img/Fiori_da_terra/IMG_1102__Fiori_da_terra.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1102__Fiori_da_terra.jpg"
+                           alt="Fiori da terra" class="category__photo">
+                     </a>
+                  </div>
+                  
+                
+                  <div class="swiper-slide">
                      <a href="/img/Fiori_da_terra/IMG_1216__Fiori_da_terra.jpg" class="glightbox">
                         <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1216__Fiori_da_terra.jpg"
-                           alt="Free standing flowers " class="category__photo">
+                           alt="Fiori da terra" class="category__photo">
                      </a>
                   </div>
                   <div class="swiper-slide">
                      <a href="/img/Fiori_da_terra/IMG_1245 1__Fiori_da_terra.jpg" class="glightbox">
                         <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1245 1__Fiori_da_terra.jpg"
-                           alt="Free standing flowers " class="category__photo">
+                           alt="Fiori da terra" class="category__photo">
                      </a>
                   </div>
                   <div class="swiper-slide">
-                     <a href="/img/Fiori_da_terra/IMG_1271 1__Fiori_da_terra.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1271 1__Fiori_da_terra.jpg"
-                           alt="Free standing flowers " class="category__photo">
+                     <a href="/img/Fiori_da_terra/IMG_1152.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1152.jpg"
+                           alt="Fiori da terra" class="category__photo">
                      </a>
                   </div>
+                  <div class="swiper-slide">
+                     <a href="/img/Fiori_da_terra/IMG_1674.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_1674.jpg"
+                           alt="Fiori da terra" class="category__photo">
+                     </a>
+                  </div>
+                  <div class="swiper-slide">
+                     <a href="/img/Fiori_da_terra/IMG_2534.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_2534.jpg"
+                           alt="Fiori da terra" class="category__photo">
+                     </a>
+                  </div>
+                  <div class="swiper-slide">
+                     <a href="/img/Fiori_da_terra/IMG_2542.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Fiori_da_terra/thumbs/IMG_2542.jpg"
+                           alt="Fiori da terra" class="category__photo">
+                     </a>
+                  </div>
+                  
                </div>
 
             </div>
@@ -303,59 +343,79 @@
             </div>
 
             <!-- Slider main container -->
-            <div class="category__gallery swiper_2 swiper-container container">
+            <div class="category__gallery swiper_2  container">
                <!-- Additional required wrapper -->
                <div class="swiper-wrapper">
                   <!-- Slides -->
                   <div class="swiper-slide">
-                     <a href="/img/Lampade/IMG_0918__Lampade.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Lampade/thumbs/IMG_0918__Lampade.jpg" alt="Lamps"
+                     <a href="/img/Lampade/IMG_8427__Lampade.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Lampade/thumbs/IMG_8427__Lampade.jpg" alt="Lampade"
                            class="category__photo">
                      </a>
                   </div>
                   <div class="swiper-slide">
+                     <a href="/img/Lampade/lampade3.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Lampade/thumbs/lampade3.jpg" alt="Lampade"
+                           class="category__photo">
+                     </a>
+                  </div>
+                 
+                  <div class="swiper-slide">
                      <a href="/img/Lampade/IMG_1076 1__Lampade.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Lampade/thumbs/IMG_1076 1__Lampade.jpg" alt="Lamps"
+                        <img loading='lazy' src="/img/Lampade/thumbs/IMG_1076 1__Lampade.jpg" alt="Lampade"
+                           class="category__photo">
+                     </a>
+                  </div>
+                  <div class="swiper-slide">
+                     <a href="/img/Lampade/lampade1.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Lampade/thumbs/lampade1.jpg" alt="Lampade"
                            class="category__photo">
                      </a>
                   </div>
                   <div class="swiper-slide">
                      <a href="/img/Lampade/IMG_1080__Lampade.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Lampade/thumbs/IMG_1080__Lampade.jpg" alt="Lamps"
+                        <img loading='lazy' src="/img/Lampade/thumbs/IMG_1080__Lampade.jpg" alt="Lampade"
                            class="category__photo">
                      </a>
                   </div>
                   <div class="swiper-slide">
                      <a href="/img/Lampade/IMG_1138__Lampade.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Lampade/thumbs/IMG_1138__Lampade.jpg" alt="Lamps"
+                        <img loading='lazy' src="/img/Lampade/thumbs/IMG_1138__Lampade.jpg" alt="Lampade"
                            class="category__photo">
                      </a>
                   </div>
                   <div class="swiper-slide">
                      <a href="/img/Lampade/IMG_1158 1__Lampade.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Lampade/thumbs/IMG_1158 1__Lampade.jpg" alt="Lamps"
+                        <img loading='lazy' src="/img/Lampade/thumbs/IMG_1158 1__Lampade.jpg" alt="Lampade"
                            class="category__photo">
                      </a>
                   </div>
                   <div class="swiper-slide">
                      <a href="/img/Lampade/IMG_1242 1__Lampade.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Lampade/thumbs/IMG_1242 1__Lampade.jpg" alt="Lamps"
+                        <img loading='lazy' src="/img/Lampade/thumbs/IMG_1242 1__Lampade.jpg" alt="Lampade"
                            class="category__photo">
                      </a>
                   </div>
-                  <div class="swiper-slide">
-                     <a href="/img/Lampade/IMG_8427__Lampade.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Lampade/thumbs/IMG_8427__Lampade.jpg" alt="Lamps"
-                           class="category__photo">
-                     </a>
-                  </div>
+                 
                   <div class="swiper-slide">
                      <a href="/img/Lampade/IMG_8432__Lampade.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Lampade/thumbs/IMG_8432__Lampade.jpg" alt="Lamps"
+                        <img loading='lazy' src="/img/Lampade/thumbs/IMG_8432__Lampade.jpg" alt="Lampade"
                            class="category__photo">
                      </a>
                   </div>
-
+                  
+                  <div class="swiper-slide">
+                     <a href="/img/Lampade/lampade2.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Lampade/thumbs/lampade2.jpg" alt="Lampade"
+                           class="category__photo">
+                     </a>
+                  </div>
+                  <div class="swiper-slide">
+                     <a href="/img/Lampade/IMG_0918__Lampade.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Lampade/thumbs/IMG_0918__Lampade.jpg" alt="Lampade"
+                           class="category__photo">
+                     </a>
+                  </div>
                </div>
                <!-- If we need pagination -->
                <div class="swiper-pagination"></div>
@@ -379,95 +439,94 @@
             </div>
 
             <!-- Slider main container -->
-            <div class="category__gallery swiper_3 swiper-container container">
+            <div class="category__gallery swiper_3  container">
                <!-- Additional required wrapper -->
                <div class="swiper-wrapper">
                   <!-- Slides -->
                   <div class="swiper-slide">
-                     <a href="/img/Zone_Foto/IMG_0400__Zone_Foto.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_0400__Zone_Foto.jpg" alt="Photozones"
-                           class="category__photo">
-                     </a>
-                  </div>
-                  <div class="swiper-slide">
-                     <a href="/img/Zone_Foto/IMG_1023 1__Zone_Foto.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_1023 1__Zone_Foto.jpg" alt="Photozones"
-                           class="category__photo">
-                     </a>
-                  </div>
-                  <div class="swiper-slide">
                      <a href="/img/Zone_Foto/IMG_1076 1__Zone_Foto.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_1076 1__Zone_Foto.jpg" alt="Photozones"
-                           class="category__photo">
-                     </a>
-                  </div>
-                  <div class="swiper-slide">
-                     <a href="/img/Zone_Foto/IMG_1085__Zone_Foto.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_1085__Zone_Foto.jpg" alt="Photozones"
-                           class="category__photo">
-                     </a>
-                  </div>
-                  <div class="swiper-slide">
-                     <a href="/img/Zone_Foto/IMG_1149__Zone_Foto-1.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_1149__Zone_Foto-1.jpg" alt="Photozones"
-                           class="category__photo">
-                     </a>
-                  </div>
-                  <div class="swiper-slide">
-                     <a href="/img/Zone_Foto/IMG_1149__Zone_Foto.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_1149__Zone_Foto.jpg" alt="Photozones"
-                           class="category__photo">
-                     </a>
-                  </div>
-                  <div class="swiper-slide">
-                     <a href="/img/Zone_Foto/IMG_1158 1__Zone_Foto.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_1158 1__Zone_Foto.jpg" alt="Photozones"
-                           class="category__photo">
-                     </a>
-                  </div>
-                  <div class="swiper-slide">
-                     <a href="/img/Zone_Foto/IMG_1187__Zone_Foto.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_1187__Zone_Foto.jpg" alt="Photozones"
-                           class="category__photo">
-                     </a>
-                  </div>
-                  <div class="swiper-slide">
-                     <a href="/img/Zone_Foto/IMG_1242 1__Zone_Foto.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_1242 1__Zone_Foto.jpg" alt="Photozones"
+                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_1076 1__Zone_Foto.jpg" alt="Zone Foto"
                            class="category__photo">
                      </a>
                   </div>
                   <div class="swiper-slide">
                      <a href="/img/Zone_Foto/IMG_4300__Zone_Foto.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_4300__Zone_Foto.jpg" Photozones"
-                           class="category__photo">
-                     </a>
-                  </div>
-                  <div class="swiper-slide">
-                     <a href="/img/Zone_Foto/IMG_6244__Zone_Foto.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_6244__Zone_Foto.jpg" alt="Photozones"
-                           class="category__photo">
-                     </a>
-                  </div>
-                  <div class="swiper-slide">
-                     <a href="/img/Zone_Foto/IMG_7685__Zone_Foto.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_7685__Zone_Foto.jpg" alt="Photozones"
+                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_4300__Zone_Foto.jpg" Zone Foto"
                            class="category__photo">
                      </a>
                   </div>
                   <div class="swiper-slide">
                      <a href="/img/Zone_Foto/IMG_7910 1__Zone_Foto.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_7910 1__Zone_Foto.jpg" alt="Photozones"
+                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_7910 1__Zone_Foto.jpg" alt="Zone Foto"
+                           class="category__photo">
+                     </a>
+                  </div>
+                  <div class="swiper-slide">
+                     <a href="/img/Zone_Foto/IMG_0400__Zone_Foto.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_0400__Zone_Foto.jpg" alt="Zone Foto"
+                           class="category__photo">
+                     </a>
+                  </div>
+                  <div class="swiper-slide">
+                     <a href="/img/Zone_Foto/IMG_1023 1__Zone_Foto.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_1023 1__Zone_Foto.jpg" alt="Zone Foto"
+                           class="category__photo">
+                     </a>
+                  </div>
+                 
+                  <div class="swiper-slide">
+                     <a href="/img/Zone_Foto/IMG_1085__Zone_Foto.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_1085__Zone_Foto.jpg" alt="Zone Foto"
+                           class="category__photo">
+                     </a>
+                  </div>
+                  <div class="swiper-slide">
+                     <a href="/img/Zone_Foto/IMG_1149__Zone_Foto-1.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_1149__Zone_Foto-1.jpg" alt="Zone Foto"
+                           class="category__photo">
+                     </a>
+                  </div>
+                  
+                  <div class="swiper-slide">
+                     <a href="/img/Zone_Foto/IMG_1158 1__Zone_Foto.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_1158 1__Zone_Foto.jpg" alt="Zone Foto"
                            class="category__photo">
                      </a>
                   </div>
                   <div class="swiper-slide">
                      <a href="/img/Zone_Foto/IMG_8432__Zone_Foto.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_8432__Zone_Foto.jpg" alt="Photozones"
+                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_8432__Zone_Foto.jpg" alt="Zone Foto"
                            class="category__photo">
                      </a>
                   </div>
 
+                  <div class="swiper-slide">
+                     <a href="/img/Zone_Foto/IMG_1187__Zone_Foto.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_1187__Zone_Foto.jpg" alt="Zone Foto"
+                           class="category__photo">
+                     </a>
+                  </div>
+                  <div class="swiper-slide">
+                     <a href="/img/Zone_Foto/IMG_1242 1__Zone_Foto.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_1242 1__Zone_Foto.jpg" alt="Zone Foto"
+                           class="category__photo">
+                     </a>
+                  </div>
+                  
+                  <div class="swiper-slide">
+                     <a href="/img/Zone_Foto/IMG_6244__Zone_Foto.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_6244__Zone_Foto.jpg" alt="Zone Foto"
+                           class="category__photo">
+                     </a>
+                  </div>
+                  <div class="swiper-slide">
+                     <a href="/img/Zone_Foto/IMG_7685__Zone_Foto.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Zone_Foto/thumbs/IMG_7685__Zone_Foto.jpg" alt="Zone Foto"
+                           class="category__photo">
+                     </a>
+                  </div>
+                  
+                 
                </div>
                <div class="swiper-pagination"></div>
 
@@ -488,35 +547,60 @@
             </div>
 
             <!-- Slider main container -->
-            <div class="category__gallery swiper_4 swiper-container container">
+            <div class="category__gallery swiper_4  container">
                <!-- Additional required wrapper -->
                <div class="swiper-wrapper">
                   <!-- Slides -->
                   <div class="swiper-slide">
-                     <a href="/img/Quadri_in_3D/IMG_0400__Quadri_in_3D.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Quadri_in_3D/thumbs/IMG_0400__Quadri_in_3D.jpg" alt="3D-pictures"
+                     <a href="/img/Quadri_in_3D/IMG_1085__Quadri_in_3D.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Quadri_in_3D/thumbs/IMG_1085__Quadri_in_3D.jpg" alt="Quadri in 3D"
                            class="category__photo">
                      </a>
                   </div>
                   <div class="swiper-slide">
-                     <a href="/img/Quadri_in_3D/IMG_1085__Quadri_in_3D.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Quadri_in_3D/thumbs/IMG_1085__Quadri_in_3D.jpg" alt="3D-pictures"
+                     <a href="/img/Quadri_in_3D/quadri1.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Quadri_in_3D/thumbs/quadri1.jpg" alt="Quadri in 3D"
                            class="category__photo">
                      </a>
                   </div>
+                  <div class="swiper-slide">
+                     <a href="/img/Quadri_in_3D/IMG_0400__Quadri_in_3D.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Quadri_in_3D/thumbs/IMG_0400__Quadri_in_3D.jpg" alt="Quadri in 3D"
+                           class="category__photo">
+                     </a>
+                  </div>
+                  
                   <div class="swiper-slide">
                      <a href="/img/Quadri_in_3D/IMG_1158 1__Quadri_in_3D.jpg" class="glightbox">
                         <img loading='lazy' src="/img/Quadri_in_3D/thumbs/IMG_1158 1__Quadri_in_3D.jpg"
-                           alt="3D-pictures" class="category__photo">
+                           alt="Quadri in 3D" class="category__photo">
                      </a>
                   </div>
                   <div class="swiper-slide">
                      <a href="/img/Quadri_in_3D/IMG_8432__Quadri_in_3D.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Quadri_in_3D/thumbs/IMG_8432__Quadri_in_3D.jpg" alt="3D-pictures"
+                        <img loading='lazy' src="/img/Quadri_in_3D/thumbs/IMG_8432__Quadri_in_3D.jpg" alt="Quadri in 3D"
                            class="category__photo">
                      </a>
                   </div>
-
+                  
+                  <div class="swiper-slide">
+                     <a href="/img/Quadri_in_3D/quadri2.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Quadri_in_3D/thumbs/quadri2.jpg" alt="Quadri in 3D"
+                           class="category__photo">
+                     </a>
+                  </div>
+                  <div class="swiper-slide">
+                     <a href="/img/Quadri_in_3D/quadri3.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Quadri_in_3D/thumbs/quadri3.jpg" alt="Quadri in 3D"
+                           class="category__photo">
+                     </a>
+                  </div>
+                  <div class="swiper-slide">
+                     <a href="/img/Quadri_in_3D/quadri4.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Quadri_in_3D/thumbs/quadri4.jpg" alt="Quadri in 3D"
+                           class="category__photo">
+                     </a>
+                  </div>
                </div>
 
             </div>
@@ -537,25 +621,13 @@
             </div>
 
             <!-- Slider main container -->
-            <div class="category__gallery swiper_5 swiper-container container">
+            <div class="category__gallery swiper_5  container">
                <!-- Additional required wrapper -->
                <div class="swiper-wrapper">
                   <!-- Slides -->
                   <div class="swiper-slide">
                      <a href="/img/Composizioni/IMG_0400__Composizioni.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Composizioni/thumbs/IMG_0400__Composizioni.jpg" alt="Compositions"
-                           class="category__photo">
-                     </a>
-                  </div>
-                  <div class="swiper-slide">
-                     <a href="/img/Composizioni/IMG_1076 1__Composizioni.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Composizioni/thumbs/IMG_1076 1__Composizioni.jpg"
-                           alt="Compositions " class="category__photo">
-                     </a>
-                  </div>
-                  <div class="swiper-slide">
-                     <a href="/img/Composizioni/IMG_1085__Composizioni.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Composizioni/thumbs/IMG_1085__Composizioni.jpg" alt="Compositions "
+                        <img loading='lazy' src="/img/Composizioni/thumbs/IMG_0400__Composizioni.jpg" alt="Composizioni"
                            class="category__photo">
                      </a>
                   </div>
@@ -566,9 +638,29 @@
                      </a>
                   </div>
                   <div class="swiper-slide">
+                     <a href="/img/Composizioni/Composizioni3.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Composizioni/thumbs/Composizioni3.jpg"
+                           alt="Composizioni " class="category__photo">
+                     </a>
+                  </div>
+                  <div class="swiper-slide">
+                     <a href="/img/Composizioni/IMG_1085__Composizioni.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Composizioni/thumbs/IMG_1085__Composizioni.jpg"
+                           alt="Composizioni " class="category__photo">
+                     </a>
+                  </div>
+                  <div class="swiper-slide">
+                     <a href="/img/Composizioni/IMG_1076 1__Composizioni.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Composizioni/thumbs/IMG_1076 1__Composizioni.jpg"
+                           alt="Composizioni " class="category__photo">
+                     </a>
+                  </div>
+                 
+                 
+                  <div class="swiper-slide">
                      <a href="/img/Composizioni/IMG_1187__Composizioni.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Composizioni/thumbs/IMG_1187__Composizioni.jpg" alt="Composizioni "
-                           class="category__photo">
+                        <img loading='lazy' src="/img/Composizioni/thumbs/IMG_1187__Composizioni.jpg"
+                           alt="Composizioni " class="category__photo">
                      </a>
                   </div>
                   <div class="swiper-slide">
@@ -579,11 +671,35 @@
                   </div>
                   <div class="swiper-slide">
                      <a href="/img/Composizioni/IMG_8432__Composizioni.jpg" class="glightbox">
-                        <img loading='lazy' src="/img/Composizioni/thumbs/IMG_8432__Composizioni.jpg" alt="Composizioni "
-                           class="category__photo">
+                        <img loading='lazy' src="/img/Composizioni/thumbs/IMG_8432__Composizioni.jpg"
+                           alt="Composizioni " class="category__photo">
                      </a>
                   </div>
-
+                  <div class="swiper-slide">
+                     <a href="/img/Composizioni/Composizioni1.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Composizioni/thumbs/Composizioni1.jpg"
+                           alt="Composizioni " class="category__photo">
+                     </a>
+                  </div>
+                  <div class="swiper-slide">
+                     <a href="/img/Composizioni/Composizioni2.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Composizioni/thumbs/Composizioni2.jpg"
+                           alt="Composizioni " class="category__photo">
+                     </a>
+                  </div>
+                  
+                  <div class="swiper-slide">
+                     <a href="/img/Composizioni/Composizioni4.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Composizioni/thumbs/Composizioni4.jpg"
+                           alt="Composizioni " class="category__photo">
+                     </a>
+                  </div>
+                  <div class="swiper-slide">
+                     <a href="/img/Quadri_in_3D/quadri3.jpg" class="glightbox">
+                        <img loading='lazy' src="/img/Quadri_in_3D/thumbs/quadri3.jpg"
+                           alt="Composizioni " class="category__photo">
+                     </a>
+                  </div>
                </div>
                <div class="swiper-pagination"></div>
 
@@ -606,10 +722,17 @@
             </div>
 
             <!-- Slider main container -->
-            <div class="category__gallery swiper_6 swiper-container container">
+            <div class="category__gallery swiper_6  container">
                <!-- Additional required wrapper -->
                <div class="swiper-wrapper">
                   <!-- Slides -->
+                  <div class="swiper-slide">
+                     <a href="/img/Composizioni_in_scatola/IMG_6244__Composizioni_in_scatola.jpg" class="glightbox">
+                        <img loading='lazy'
+                           src="/img/Composizioni_in_scatola/thumbs/IMG_6244__Composizioni_in_scatola.jpg"
+                           alt="Composizioni in scatola " class="category__photo">
+                     </a>
+                  </div>
                   <div class="swiper-slide">
                      <a href="/img/Composizioni_in_scatola/IMG_0400__Composizioni_in_scatola.jpg" class="glightbox">
                         <img loading='lazy'
@@ -637,13 +760,7 @@
                            alt="Composizioni in scatola " class="category__photo">
                      </a>
                   </div>
-                  <div class="swiper-slide">
-                     <a href="/img/Composizioni_in_scatola/IMG_6244__Composizioni_in_scatola.jpg" class="glightbox">
-                        <img loading='lazy'
-                           src="/img/Composizioni_in_scatola/thumbs/IMG_6244__Composizioni_in_scatola.jpg"
-                           alt="Composizioni in scatola " class="category__photo">
-                     </a>
-                  </div>
+                 
                   <div class="swiper-slide">
                      <a href="/img/Composizioni_in_scatola/IMG_8432__Composizioni_in_scatola.jpg" class="glightbox">
                         <img loading='lazy'
@@ -664,20 +781,15 @@
                <div id="button-next__swiper_6"><button class="controls__right"></button></div>
             </div>
          </div>
-         <p class="main__text container mt-5">
-            <b>*</b> The price for each item varies and depends on the difficulty of processing, color and size.
-         </p>
-         <p class="main__text container">
-            <b>**</b> All prices are given without delivery fee, which is paid by the customer.
-         </p>
+        
          <!-- / Compositions in scatola -->
-         <p class="assortment__subheading end container">or something unique just for you!</p>
+         <p class="assortment__subheading end container">We are always happy to create something unique just for you</p>
          <a href="#order" class="mx-auto  ordine-btn assortment__btn">order giant flowers</a>
          
       </div>
       <div id='order' class="order-block">
          <h2 class="main__heading order__heading">Ordering</h2>
-         <div class="order__subheading">To order, write to us in a way convenient for you</div>
+         <div class="order__subheading">Text us your order whenever you've made up your mind and we'll get right on it</div>
          <div class="order__links contact-links">
             <a href="https://m.me/ifiorigigantidiirina" target="_blank" class="contact-links__messanger"
                title="write me in Messanger to to order"></a>
@@ -686,7 +798,7 @@
          </div>
          <div class="order__socials social-links mx-auto">
             <div class="socials-links__text">
-               Also follow us on social media:
+               Follow us on social media:
             </div>
             <a href="https://www.instagram.com/irina_exclusive_show/" target="_blank" class="social-links__insta"
                title="my Instagram"></a>

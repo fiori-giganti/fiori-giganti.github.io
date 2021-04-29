@@ -48,9 +48,15 @@
    <header class="header-wrapper biografia container-fluid flex-column "> 
       <div class="header__menu menu navbar navbar-expand-md navbar-light header container justify-content-between ">
          <a href="/en/"  class="header__logo navbar-brand "><img src="/img/logo.svg" alt=""></a>
-         <button class="d-md-none menu__toggler-btn" >
-            <span></span>
-          </button>
+         <div class="menu__controls d-flex">
+            <a href="/en/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Leggi in italiano" class="d-none d-md-none lang-toggler-btn nav-link">
+               <span>EN</span>
+            </a>
+            
+            <button class="d-md-none menu__toggler-btn">
+               <span></span>
+            </button>
+         </div>
          <nav class="menu__body navbar-collapse  d-md-flex" >
             <ul class="navbar-nav animate__animated animate__fadeInDown">
                <li class="nav-item menu__link "><a href="/en/" class="nav-link header__menu-link">Home</a></li>
@@ -172,7 +178,6 @@
    </footer>
    <script src="/js/glightbox.min.js" defer></script>
    <script src="/js/swiper-bundle.min.js" defer></script>
-
    <script src="/js/script.js" defer></script>
   </body>
 </html>
