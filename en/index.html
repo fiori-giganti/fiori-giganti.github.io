@@ -62,24 +62,42 @@
             </button>
          </div>
          <nav class="menu__body navbar-collapse  d-md-flex">
+
             <ul class="navbar-nav animate__animated animate__fadeInDown">
-               <li class="nav-item menu__link active"><a href="/en/" class="nav-link header__menu-link">Home</a></li>
-               <li class="nav-item menu__link" id="navToFAQ"><a href="#FAQ" class="nav-link header__menu-link">FAQ</a></li>
-               <li class="nav-item menu__link"><a href="our-story/" class="nav-link header__menu-link">Our story</a></li>
-               <li class="nav-item menu__link" id="navToOrder"><a href="#order"
+               <li class="nav-item menu__link active"><a href="/" class="nav-link header__menu-link">Home</a></li>
+               <div class="menu__dropdown ">
+
+                  <li id='menuCollapseBtn' class="nav-item menu__link nav-to"><a href="#FAQ" class="nav-link header__menu-link">FAQ</a> <span></span></li>
+                  <ul class="menu__dropdown-menu " id="menuCollapse">
+                     <li class="nav-item menu__link nav-to" data-goto='Materials'><a href='#Materials' class="menu__dropdown-item nav-link">Materials</a></li>
+                     <li class="nav-item menu__link nav-to" data-goto='Sizes&Colors'><a href='#Sizes&Colors' class="menu__dropdown-item nav-link">Sizes & Colors</a></li>
+                     <li class="nav-item menu__link nav-to" data-goto='Prices'><a href='#Prices' class="menu__dropdown-item nav-link">Prices</a></li>
+                     <li class="nav-item menu__link nav-to" data-goto='ManufacturingTime'><a href='#ManufacturingTime' class="menu__dropdown-item nav-link">Manufacturing Time</a></li>
+                     <li class="nav-item menu__link nav-to" data-goto='Shipping&Rent'><a href='#Shipping&Rent' class="menu__dropdown-item nav-link">Shipping & Rent</a></li>
+                   </ul>
+               </div>
+               <li class="nav-item menu__link"><a href="/en/our-story/" class="nav-link header__menu-link">Our story</a></li>
+               
+               <li class="nav-item menu__link nav-to d-md-none" data-goto='assortment' id="navToAssortment"><a href="#assortment" class="nav-link header__menu-link">Assortment</a></li>
+               
+               <li class="nav-item menu__link nav-to" data-goto='reviews' id="navToReviews"><a href="#reviews" class="nav-link header__menu-link">Reviews</a></li>
+               <li class="nav-item menu__link nav-to"  data-goto='order' id="navToOrder"><a href="#order"
                      class="nav-link header__menu-link">Contacts</a></li>
                <li class="nav-item menu__link"><a href="/" class="nav-link header__menu-link">IT</a></li>
+               <div class="order__socials social-links mx-auto d-md-none">
+                  <div class="socials-links__text">
+                     Follow us on social media:
+                  </div>
+                  <a href="https://www.instagram.com/irina_exclusive_show/" target="_blank" class="social-links__insta"
+                     title="my Instagram"></a>
+                  <a href="https://www.tiktok.com/@irinaexclusiveshow" target="_blank" class="social-links__tiktok"
+                     title="my TikTok"></a>
+                  <a href="https://www.facebook.com/ifiorigigantidiirina" target="_blank" class="social-links__fb"
+                     title="my FaceBook page"></a>
+      
+               </div>
             </ul>
-            <div class="menu__social-links en  social-links  d-md-none d-flex justify-content-center mx-3">
-
-               <a href="https://www.instagram.com/irina_exclusive_show/" target="_blank" class="social-links__insta"
-                  title="my Instagram"></a>
-               <a href="https://www.tiktok.com/@irinaexclusiveshow" target="_blank" class="social-links__tiktok"
-                  title="my TikTok"></a>
-               <a href="https://www.facebook.com/ifiorigigantidiirina" target="_blank" class="social-links__fb"
-                  title="my FaceBook page"></a>
-
-            </div>
+           
 
          </nav>
       </div>
@@ -119,43 +137,42 @@
       </div>
       <div class=" faq-block-wrapper ">
          <div class="faq-block container ">
-            
+
             <div class="faq-block__tabs-wrapper swiper-container">
                <ul class="faq-block__tabs swiper-wrapper align-self-center align-items-center px-0" id="FAQ">
-                  
-                  <li class="faq-block__item swiper-slide  col-sm-3 col-3">
+
+                  <li id='Materials' class="faq-block__item swiper-slide  col-3">
                      <h3>Materials</h3>
                   </li>
-                  <li class="faq-block__item swiper-slide col-sm-2 col-3">
+                  <li id='Sizes&Colors' class="faq-block__item swiper-slide   col-3">
                      <h3>Sizes & Colors</h3>
                   </li>
-                  <li  id='Prezzi' class="faq-block__item swiper-slide col-sm-2 col-3">
+                  <li  id='Prices' class="faq-block__item swiper-slide   col-3">
                      <h3>Prices</h3>
                   </li>
-                  <li class="faq-block__item swiper-slide col-sm-3 col-4">
+                  <li id='ManufacturingTime' class="faq-block__item swiper-slide  col-3 ">
                      <h3>Manufacturing Time</h3>
                   </li>
-                  <li class="faq-block__item swiper-slide col-sm-3 col-3">
+                  <li id='Shipping&Rent' class="faq-block__item swiper-slide  col-3 ">
                      <h3>Shipping & Rent</h3>
                   </li>
                </ul>
             </div>
             <div class="faq-block__content-wrapper swiper-container">
                <div class="faq-block__tabs-content swiper-wrapper">
-                  <div class="faq-block__content-item swiper-slide ">
+                  <div class="faq-block__content-item swiper-slide " data-category='Materials'>
                      <p>
                         The giant flowers are created with <strong>non-toxic, hypoallergenic and odorless</strong> materials. We use isolon and eva rubber of different colors and thicknesses. The material is not afraid of humidity, you can easily wash it with a wet cloth, in the shower (but NOT with hot water) or simply with the blow of cold air from the hairdryer.
                      </p>
                   </div>
-                  <div class="faq-block__content-item swiper-slide ">
+                  <div class="faq-block__content-item swiper-slide " data-category='Sizes&Colors'>
                      <p>
                         We use materials of different colors or they can be painted into different shades by hand, if needed. We always strive to meet the customer's needs and, based on availability, we can create a unique and original Minimum size of the wall flowers starts from 30 cm up to infinity (as needed). 
                      </p>
-                    <p>
-                     Average measurements of the outside on the stem (of a lamp or other item): flowers' diameter - 45-50 cm; height - 1.60-1.80 morder.
-                    </p>
+                     <p>
+                        Average measurements of the outside on the stem (of a lamp or other item): flowers' diameter - 45-50 cm; height - 1.60-1.80 morder.</p>
                   </div>
-                  <div class="faq-block__content-item swiper-slide ">
+                  <div class="faq-block__content-item swiper-slide " data-category='Prices'>
                      <p>
                         The price for each item varies and depends on the difficulty of processing, color and size.
                      </p>
@@ -190,13 +207,13 @@
                         All prices are given without delivery fee, which is paid by the customer.
                      </p>
                   </div>
-                  <div class="faq-block__content-item swiper-slide ">
+                  <div class="faq-block__content-item swiper-slide " data-category='ManufacturingTime'>
                      <p>The time spent on manufacturing varies depending on the quantity of orders, the availability of colors and materials.</p>
                      <p>
                         The approximate manufacturing time is 20 - 30 days from the moment of prepayment in the amount of 30% of the value of the item.
                      </p>
                   </div>
-                  <div class="faq-block__content-item swiper-slide ">
+                  <div class="faq-block__content-item swiper-slide " data-category='Shipping&Rent'>
                      <p>
                         <strong>SHIPPING:</strong> throughout Italy or around the world. Shipping prices vary according to the size of the package. An example: a wall flower 7-10 €; a lamp or a decorative flower on the stem 25-35 €; composition of 3 free standing flowers  € 30-35.
                      </p>
@@ -207,13 +224,13 @@
                         All prices are given without delivery fee, which is paid by the customer.
                      </p>
                   </div>
-   
+
                </div>
             </div>
 
          </div>
       </div>
-      <div class="assortment">
+      <div id='assortment' class="assortment">
          <h2 class="assortment__heading main__heading container">assortment on offer</h2>
          <p class="assortment__subheading container"></p>         
          <!-- Free standing flowers  -->
@@ -787,6 +804,124 @@
          <a href="#order" class="mx-auto  ordine-btn assortment__btn">order giant flowers</a>
          
       </div>
+
+      <div id='reviews' class="faq-block-wrapper reviews__wrapper">
+         <div class="reviews__block">
+            
+            <h2 class="main__heading container">Reviews</h2>
+            <h4 class="reviews__subheading container mx-auto">
+               This is what customers say about us
+            </h4>
+
+            <div id='reviewscontainer' class="reviews__slider swiper-container container" >
+               <div class="swiper-wrapper">
+                  <div class="reviews__item default swiper-slide col-10 col-sm-8 col-md-5 col-lg-4 ">
+                     <div class="review__wrapper">
+                        <div class="review ">
+                            <div class="review__name">Your name</div>
+                            <div class="review__rating">
+                               <div class="stars five">
+                                  <span class="stars__item one">★</span><span class="stars__item two">★</span><span class="stars__item three">★</span><span class="stars__item four">★</span><span class="stars__item five">★</span>
+                               </div>
+                               <span class="reccomend">I recommend!</span>
+                            </div>
+                            <p class="review__text" style="font-style: italic;">
+                              It could be your feedback...
+                            </p>
+                            <button class="review__details">Read full</button>
+                            <span class="review__date"></span>
+                        </div>
+                     </div>
+                  </div>                  
+               </div>
+              
+            </div>
+            <div class="review__controls mx-auto">
+               <button class="reviews__left"></button>
+
+                <!-- Button trigger modal -->
+               <button type="button" class="col-12 ordine-btn reviews-block__btn" data-bs-toggle="modal" data-bs-target="#addReviewModal">
+                  Add your review
+                  </button>
+
+               <button class="reviews__right"></button>
+               </div>              
+
+            <!-- Modal -->
+            <div class="modal fade" id="addReviewModal" tabindex="-1" aria-labelledby="addReviewModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-lg modal-dialog-centered">
+               <div class="modal-content">
+                  <div class="modal-header">
+                  <h3 class="modal-title" id="exampleModalLabel">Add your review</h3>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                  </button>
+                  </div>
+                  <div class="modal-body">
+                     
+                      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+          onload="if(submitted) { if (submitted){ document.querySelector('.modal-title').textContent='Grazie per il feedback'; document.querySelector('.modal-body h4').innerHTML=''; document.querySelector('.modal-body form.review').classList.add('d-none'); document.querySelector('.modal__recomend').classList.remove('d-none'); } }"></iframe>
+                     <form class="review " action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfnO0syXyqIOCZjwcibtPHmtDReBlAh70WmrNhbZhmApYGVpA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                        <h4 class="mb-3">Please share <i class="fa fa-youtube-square" aria-hidden="true"></i> impressions of the Giant Flowers from Irina</h4>
+                          <div class="mb-4">
+                             <label  for="nameInput" class="form-label">Enter your name</label>
+                             <input required type="text" name="entry.1185049814" class="form-control" id="nameInput">
+                          </div>
+                        
+                          <div class="mb-4">
+                             <label class="form-label">Rate us on a scale of 1 to 5</label>
+                             <div class="product-review-stars">
+                              <input required type="radio" id="star5" name="entry.802137014" value="5" class="visuallyhidden" /><label for="star5" title="Rocks!">★</label>
+                              <input required type="radio" id="star4" name="entry.802137014" value="4" class="visuallyhidden" /><label for="star4" title="Pretty good">★</label>
+                              <input required type="radio" id="star3" name="entry.802137014" value="3" class="visuallyhidden" /><label for="star3" title="Meh">★</label>
+                              <input required type="radio" id="star2" name="entry.802137014" value="2" class="visuallyhidden" /><label for="star2" title="Kinda bad">★</label>
+                              <input required type="radio" id="star1" name="entry.802137014" value="1" class="visuallyhidden" /><label for="star1" title="Sucks big time">★</label>
+                            </div> 
+                          </div>
+                          <div class="mb-4"> 
+                             <label for="reviewInput" class="form-label">Please describe your experience of our service</label>
+                             <textarea required class="form-control" id="reviewInput" name="entry.1417785936" ></textarea>
+                          </div>
+                          <label for="recommendInput" class="form-label">Would you recommend us to your friends?</label>
+                          <div class="mb-1">
+                             <input class="form-check-input" name="entry.200182177" type="radio" name="recommendInput" id="recommendInputYes" value="I recommend!">
+                             <label class="form-check-label" for="recommendInputYes">Yes, I recommend!</label>
+                          </div>
+                          <div class="mb-4">
+                             <input class="form-check-input" name="entry.200182177" type="radio" name="recommendInput" id="recommendInputNo" value="Not recommend">
+                             <label class="form-check-label" for="recommendInputNo">Nope...</label>
+                          </div>
+                         <div>
+                             <button type="submit" class="ordine-btn modal__btn mt-5 mb-3">Save</button>
+                           </div>
+                      </form>
+                      <div class="modal__recomend d-none">
+                        <div>
+                           <h4>We will be grateful for the recommendation to your friends</h4>
+                           <div class="fb-like" data-href="https://www.facebook.com/ifiorigigantidiirina" data-width="256" data-layout="box_count" data-action="recommend" data-size="large" data-share="true"></div>
+                        </div>
+                        <div class="order__socials  social-links">
+                           <div class="socials-links__text">
+                              To see more, follow us on social media
+                           </div>
+                           <a href="https://www.instagram.com/irina_exclusive_show/" target="_blank" class="social-links__insta"
+                              title="my Instagram"></a>
+                           <a href="https://www.tiktok.com/@irinaexclusiveshow" target="_blank" class="social-links__tiktok"
+                              title="my TikTok"></a>
+                           <a href="https://www.facebook.com/ifiorigigantidiirina" target="_blank" class="social-links__fb"
+                              title="my FaceBook page"></a>
+               
+                        </div>
+                      </div>
+                  </div>
+                  
+               </div>
+            </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
       <div id='order' class="order-block">
          <h2 class="main__heading order__heading">Ordering</h2>
          <div class="order__subheading">Text us your order whenever you've made up your mind and we'll get right on it</div>
@@ -809,6 +944,7 @@
 
          </div>
       </div>
+     
       </div>
       </div>
    </main>
@@ -824,9 +960,11 @@
          </div>
       </div>
    </footer>
-   <script src="/js/glightbox.min.js" defer></script>
    <script src="/js/swiper-bundle.min.js" defer></script>
-
+   <script src="/js/glightbox.min.js" defer></script>
+   <div id="fb-root"></div>
+   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_EN/sdk.js#xfbml=1&version=v10.0" nonce="hQKu1mfW"></script>
+   <script src="/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
    <script src="/js/script.js" defer></script>
 </body>
 

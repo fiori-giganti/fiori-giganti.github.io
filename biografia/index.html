@@ -48,35 +48,55 @@
   <body class="biografia">
    
    <header class="header-wrapper biografia container-fluid flex-column "> 
-      <div class="header__menu menu navbar navbar-expand-md navbar-light header container justify-content-between ">
-         <a href="/"  class="header__logo navbar-brand "><img src="../img/logo.svg" alt=""></a>
-         <div class="menu__controls d-flex">
-            <a href="/en/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Read in English" class="d-none d-md-none lang-toggler-btn nav-link">
-               <span>EN</span>
-            </a>
-            
-            <button class="d-md-none menu__toggler-btn">
-               <span></span>
-            </button>
-         </div>
-         <nav class="menu__body navbar-collapse  d-md-flex" >
-            <ul class="navbar-nav animate__animated animate__fadeInDown">
-               <li class="nav-item menu__link "><a href="/" class="nav-link header__menu-link">Casa</a></li>
-               <li class="nav-item menu__link" id="navToFAQ"><a href="/#FAQ" class="nav-link header__menu-link">Domande frequenti</a></li>
-               <li class="nav-item menu__link active"><a href="/biografia/" class="nav-link header__menu-link">La nostra storia</a></li>
-               <li class="nav-item menu__link" id="navToOrder"><a href="#order" class="nav-link header__menu-link">Contatti</a></li>
-               <li class="nav-item menu__link"><a href="/en/our-story/" class="nav-link header__menu-link">EN</a></li>
-           </ul>
-          <div class="menu__social-links   social-links  d-md-none d-flex justify-content-center mx-3">
-            
-            <a href="https://www.instagram.com/irina_exclusive_show/" target="_blank" class="social-links__insta" title="my Instagram"></a>
-            <a href="https://www.tiktok.com/@irinaexclusiveshow" target="_blank" class="social-links__tiktok" title="my TikTok"></a>
-            <a href="https://www.facebook.com/ifiorigigantidiirina" target="_blank" class="social-links__fb" title="my FaceBook page"></a>
-
-          </div>
-           
-         </nav>
+      <div
+      class="header__menu menu navbar navbar-expand-md navbar-light header container justify-content-between animate__animated  ">
+      <a href="/" class="header__logo navbar-brand "><img loading='lazy' src="/img/logo.svg" alt=""></a>
+      <div class="menu__controls d-flex">
+         <a href="/en/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Read in English" class="d-none d-md-none lang-toggler-btn nav-link">
+            <span>EN</span>
+         </a>
+         
+         <button class="d-md-none menu__toggler-btn">
+            <span></span>
+         </button>
       </div>
+      <nav class="menu__body navbar-collapse  d-md-flex">
+
+         <ul class="navbar-nav animate__animated animate__fadeInDown">
+            <li class="nav-item menu__link active"><a href="/" class="nav-link header__menu-link">Casa</a></li>
+            <div class="menu__dropdown ">
+               <li id='menuCollapseBtn' class="nav-item menu__link nav-to"><a href="/#FAQ" class="nav-link header__menu-link">Domande frequenti</a> <span></span></li>
+               <ul class="menu__dropdown-menu " id="menuCollapse">
+                  <li class="nav-item menu__link nav-to" data-goto='Materiali'><a href='/#Materiali' class="menu__dropdown-item nav-link">Materiali</a></li>
+                  <li class="nav-item menu__link nav-to" data-goto='Misure-e-colori'><a href='/#Misure-e-colori' class="menu__dropdown-item nav-link">Misure e colori</a></li>
+                  <li class="nav-item menu__link nav-to" data-goto='Prezzi'><a href='/#Prezzi' class="menu__dropdown-item nav-link">Prezzi</a></li>
+                  <li class="nav-item menu__link nav-to" data-goto='Tempi'><a href='/#Tempi' class="menu__dropdown-item nav-link">Tempi di realizzazione</a></li>
+                  <li class="nav-item menu__link nav-to" data-goto='Zpedizione'><a href='/#Zpedizione' class="menu__dropdown-item nav-link">Zpedizione e noleggio</a></li>
+                </ul>
+            </div>
+            <li class="nav-item menu__link"><a href="/biografia/" class="nav-link header__menu-link">La nostra
+                  storia</a></li>
+            
+            <li class="nav-item menu__link nav-to d-md-none" data-goto='assortimento' id="navToAssortment"><a href="/#assortimento" class="nav-link header__menu-link">Assortimento</a></li>
+            
+            <li class="nav-item menu__link nav-to" data-goto='reviews' id="navToReviews"><a href="/#reviews" class="nav-link header__menu-link">Recensioni</a></li>
+            <li class="nav-item menu__link nav-to"  data-goto='order' id="navToOrder"><a href="#order"
+                  class="nav-link header__menu-link">Contatti</a></li>
+            <li class="nav-item menu__link"><a href="/en/our-story" class="nav-link header__menu-link">EN</a></li>
+            <div class="order__socials social-links mx-auto d-md-none">
+               <div class="socials-links__text">
+                  Per vedere di più, seguici sui social media
+               </div>
+               <a href="https://www.instagram.com/irina_exclusive_show/" target="_blank" class="social-links__insta"
+                  title="my Instagram"></a>
+               <a href="https://www.tiktok.com/@irinaexclusiveshow" target="_blank" class="social-links__tiktok"
+                  title="my TikTok"></a>
+               <a href="https://www.facebook.com/ifiorigigantidiirina" target="_blank" class="social-links__fb"
+                  title="my FaceBook page"></a>
+            </div>
+         </ul>
+      </nav>
+   </div>
       <div class="header-wrapper__content biografia container ">
          <h1 class="header-wrapper__title biografia animate__animated animate__fadeInDown">La nostra storia</h1>
         
@@ -172,9 +192,8 @@
          </div>
       </div>
    </footer>
-   <script src="/js/glightbox.min.js" defer></script>
    <script src="/js/swiper-bundle.min.js" defer></script>
-
+   <script src="/js/glightbox.min.js" defer></script>
    <script src="/js/script.js" defer></script>
   </body>
 </html>
